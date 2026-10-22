@@ -1,0 +1,70 @@
+"""
+circle_area.py
+
+Description:
+This program calculates the area of a circle using a user-provided radius.
+It demonstrates:
+- Input handling and validation
+- String manipulation
+- Exception handling
+- Mathematical calculations
+
+Formula:
+Area = π * radius^2
+
+For this assignment, π is approximated as 3.14.
+"""
+
+PI = 3.14
+
+# Keep asking until valid input is received
+while True:
+    try:
+        # Input Handling
+        user_input = input("Enter the radius of the circle: ").strip()
+
+        # Check for empty input
+        if len(user_input) == 0:
+            print("Error: Input cannot be empty. Please try again.")
+            continue
+
+        # Convert input to a float
+        radius = float(user_input)
+
+        # Validate radius value
+        if radius < 0:
+            print("Error: Radius cannot be negative. Please enter a positive number.")
+            continue
+
+        # Calculate area
+        area = PI * (radius**2)
+
+        # Display result
+        print(f"\nThe area of the circle is: {area:.2f}")
+
+        # -------------------------------------------------
+        # String Manipulation Examples
+        # -------------------------------------------------
+
+        result_message = f"The area of the circle is {area:.2f}"
+
+        # Transformation #1: Convert to uppercase
+        print("\nString Transformation:")
+        print("Uppercase:", result_message.upper())
+
+        # Transformation #2: Reverse the string
+        print("Reversed:", result_message[::-1])
+
+        # Analysis #1: Count words
+        word_count = len(result_message.split())
+        print("\nString Analysis:")
+        print("Word Count:", word_count)
+
+        # Analysis #2: Count occurrences of the word 'circle'
+        print("Occurrences of 'circle':", result_message.lower().count("circle"))
+
+        # Exit loop after successful completion
+        break
+
+    except ValueError:
+        print("Error: Please enter a valid number (integer or decimal).")
