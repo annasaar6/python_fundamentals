@@ -202,3 +202,20 @@ Result: Pass
 ## Author
 
 Created for the Python Fundamentals assignment.
+
+
+results
+PS C:\Users\vboxuser\Desktop\762-assignments> (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& c:\Users\vboxuser\Desktop\762-assignments\.venv\Scripts\Activate.ps1)
+(.venv) PS C:\Users\vboxuser\Desktop\762-assignments> & c:\Users\vboxuser\Desktop\762-assignments\.venv\Scripts\python.exe c:/Users/vboxuser/Desktop/762-assignments/module-2-project-1/area-of-a-circle
+Enter the radius of the circle: 5
+
+The area of the circle is: 78.50
+
+String Transformation:
+Uppercase: THE AREA OF THE CIRCLE IS 78.50
+Reversed: 05.87 si elcric eht fo aera ehT
+
+String Analysis:
+Word Count: 7
+Occurrences of 'circle': 1
+(.venv) PS C:\Users\vboxuser\Desktop\762-assignments> 
